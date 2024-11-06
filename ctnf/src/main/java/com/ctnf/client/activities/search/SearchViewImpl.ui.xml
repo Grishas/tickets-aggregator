@@ -1,0 +1,310 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+			 xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
+             xmlns:b.gwt="urn:import:org.gwtbootstrap3.client.ui.gwt"
+             xmlns:b3="urn:import:org.gwtbootstrap3.extras.datepicker.client.ui"
+             xmlns:b4="urn:import:org.gwtbootstrap3.extras.slider.client.ui"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	    <ui:style>
+	      .centralize__ {
+				text-align:center;
+				display: block;
+	    		margin-left: auto;
+	    		margin-right: auto;
+			}
+			
+			
+		</ui:style>
+		
+<g:ScrollPanel>
+		
+	<b:Container fluid="true" ui:field="container">
+
+	<b:Row>
+		<b:Column size="XS_12,SM_12,MD_12,LG_12" offset="XS_0,SM_0,MD_0,LG_0"  paddingLeft="0" paddingRight="0" marginLeft="0" marginRight="0">
+			<b.html:Div ui:field="divMenu" />
+		</b:Column>
+	</b:Row>
+		
+		<b:Row ui:field="rowWelcome">
+			<b:Column size="XS_12,SM_12,MD_8,LG_8" offset="XS_0,SM_0,MD_2,LG_2" marginTop="10" marginBottom="20">
+				
+				 <b:Carousel b:id="carousel-captions" styleName="{style.centralize__}">
+                        
+                        <b:CarouselInner>
+                        
+                            <b:CarouselSlide active="true" >
+                                
+                                <b.html:Br/>
+                                <b:Image ui:field="image1" styleName="{style.centralize__}" responsive="true" width="90%" />
+								<b:Heading size="H3" text="Find and compare tickets for sports, theater and more!" color="#337ab7" styleName="{style.centralize__}"/>
+                                <b:Heading size="H3" text="Search by event, performer, venue..." color="#337ab7" styleName="{style.centralize__}"/>
+                                
+                            </b:CarouselSlide>
+                            
+<!--                              <b:CarouselSlide> -->
+                                
+<!--                                 <b.html:Br/> -->
+<!--                                 <b:Image ui:field="image2" styleName="{style.centralize}" responsive="true" width="70%" /> -->
+<!-- 								<b:Heading size="H3" text="Find and compare tickets for sports, theater and more!" color="#337ab7" styleName="{style.centralize}"/> -->
+<!--                                 <b:Heading size="H4" text="Search by event, performer, venue..." color="#337ab7" styleName="{style.centralize}"/> -->
+                                                          
+<!--                             </b:CarouselSlide> -->
+                           
+                        </b:CarouselInner>
+                        
+                        <b:CarouselControl visible="false" dataTarget="#carousel-captions" prev="true"  iconType="CHEVRON_CIRCLE_LEFT" color="#337ab7"/>
+                        <b:CarouselControl visible="false" dataTarget="#carousel-captions" next="true"  iconType="CHEVRON_CIRCLE_RIGHT" color="#337ab7"/>
+                    </b:Carousel>
+				
+				
+				
+				
+				
+			</b:Column>
+		</b:Row>
+		
+		
+<!-- 		<b:Row ui:field="rowWelcome"> -->
+		
+<!-- 			 <b:Column size="XS_12,SM_12,MD_10,LG_10" offset="XS_0,SM_0,MD_1,LG_1" marginTop="50"> -->
+			 
+<!-- 			    	<b:Image ui:field="imageLogoCompareTicketsNow"  visible="true"  width="70%"  -->
+<!-- 			    	responsive="true" styleName="{style.centralize}"/> -->
+														 							
+<!-- 			 			<b.html:Paragraph width="60%" visible="true" alignment="CENTER" styleName="{style.centralize}" color="white"> -->
+			 			
+<!-- 			 			<b:Heading size="H3"> -->
+	
+<!-- 							<b.html:Text text="Find and compare tickets for sports, theater and more!"/> -->
+
+<!-- 			 			</b:Heading> -->
+
+<!-- 			 			<b:Heading size="H4"> -->
+					 				
+<!-- 				 			<b.html:Text text="Search by event, performer, venue..."/> -->
+
+<!-- 			 			</b:Heading> -->
+			 						 			
+<!-- 			 			</b.html:Paragraph> -->
+			 			
+<!-- 						<b.html:Br/> 			 -->
+<!-- 		     </b:Column>       -->
+		
+<!-- 		</b:Row>	 -->
+
+	
+		<b:Row ui:field="rowTop"  marginTop="10" marginBottom="10">
+		
+			<b:Column ui:field="columnSearchBy" size="XS_12,SM_12,MD_6,LG_6" offset="XS_0,SM_0,MD_3,LG_3">
+			  					  		
+			  		<b:InputGroup>        
+		            		  
+		            		  <b:InputGroupButton>
+									<b:Button ui:field="buttonSearchBy" icon="FLAG" type="PRIMARY" dataToggle="DROPDOWN" text="Event" height="40px"/>
+									  <b:DropDownMenu>
+									  <!-- initial values -->
+									    <b:AnchorListItem icon="STAR" ui:field="anchorSearchByA">Performer</b:AnchorListItem>
+									    <b:AnchorListItem icon="BUILDING" ui:field="anchorSearchByB">Venue</b:AnchorListItem>
+									  </b:DropDownMenu>
+							   </b:InputGroupButton>
+		            		     
+								<!--animationEnabled="true" deprecated in core.if set it cause problem ie firefox -->
+		              			<b:SuggestBox ui:field="suggestBoxEventPerformerVenue"
+		              			autoSelectEnabled="false" autoComplete="true" height="40px"/>
+
+		                  		<b:InputGroupButton>
+					      			
+					      			<b:Button ui:field="buttonResetSearchBy" type="DEFAULT" 
+					      			icon="CLOSE" iconPosition="RIGHT" height="40px" title="clear search"/>	
+			
+					      			<b:Button ui:field="buttonSearch" type="PRIMARY" icon="SEARCH"
+					      			iconPosition="RIGHT" height="40px" width="60px"/>	
+					      				      		
+					      		</b:InputGroupButton>
+
+					 </b:InputGroup> 
+					 					 
+	            </b:Column>  
+			</b:Row>
+	
+			<b:Row ui:field="row3">
+				
+					<b:Column ui:field="columnLocation" size="XS_12,SM_12,MD_3,LG_3" offset="XS_0,SM_0,MD_3,LG_3">
+					
+						<b:Collapse  ui:field="collapseLocation" b:id="collapseLocation" toggle="false" marginTop="0" marginBottom="10">
+													
+								<b:InputGroup>
+								
+								<b:InputGroupAddon icon="MAP_MARKER">Location</b:InputGroupAddon>
+								
+									<!--animationEnabled="true" deprecated in core.if set it cause problem ie firefox -->
+									<b:SuggestBox ui:field="suggestBoxLocation" autoComplete="true"
+									placeholder="Search by City, State, Country" width="100%"/>
+				            			            	
+				            	</b:InputGroup>
+			        				        			
+		        		</b:Collapse>
+		        
+					</b:Column>		
+			
+				</b:Row>		
+				
+				
+			<b:Row ui:field="row2" marginBottom="10">
+			
+				<b:Column ui:field="columnSetLocationAndDate1" size="XS_12,SM_12,MD_3,LG_3" offset="XS_0,SM_0,MD_3,LG_3">
+	
+					<b:ButtonGroup width="100%">
+					
+						<b:Button marginTop="0" marginBottom="0" width="15%"
+						ui:field="buttonResetLocation" type="DEFAULT" icon="CLOSE" iconPosition="RIGHT" title="clear location"/>
+								
+					  	<b:Button marginTop="0" marginBottom="0" marginRight="0" width="85%"
+					  	ui:field="buttonCustomizeLocation" dataToggle="DROPDOWN" text="Set location" type="PRIMARY" icon="MAP_MARKER"/>
+					  	
+						  	<b:DropDownMenu marginLeft="0" width="100%">
+						  	
+						    	<b:AnchorListItem ui:field="anchorListItemLocationKeepOriginalLocation"></b:AnchorListItem>
+						    	
+						    	<b:AnchorListItem icon="DOT_CIRCLE_O" ui:field="anchorListItemLocationSearchAround">Search Around</b:AnchorListItem>
+						    	
+						    	<b:Button ui:field="buttonCollapseNewLocation" marginLeft="10" type="LINK" dataToggle="COLLAPSE" 
+								dataTarget="#collapseLocation" text="New Location..." icon="MAP_MARKER"/>
+							
+						  </b:DropDownMenu>
+							  
+					</b:ButtonGroup>
+					
+				
+				</b:Column>
+				
+			</b:Row>
+				
+				
+				<b:Row ui:field="row22">
+				
+				
+				<b:Column ui:field="columnSetLocationAndDate2" size="XS_12,SM_12,MD_3,LG_3" offset="XS_0,SM_0,MD_3,LG_3">
+				
+					<b:ButtonGroup width="100%">
+					
+						<b:Button marginTop="0" marginBottom="0" width="15%"
+						 ui:field="buttonResetDates" type="DEFAULT" icon="CLOSE" iconPosition="RIGHT" title="clear dates"/>
+						
+					  	<b:Button marginTop="0" marginBottom="0" width="85%"
+					  	ui:field="buttonCustomizeDates" dataToggle="DROPDOWN" text="Dates" type="PRIMARY" icon="CALENDAR"/>
+					  	
+						  	<b:DropDownMenu marginLeft="0" width="100%">
+						  	
+						    	<b:AnchorListItem ui:field="anchorListItemNextADays">Today</b:AnchorListItem>
+								<b:AnchorListItem ui:field="anchorListItemNextBDays">Tomorrow</b:AnchorListItem>
+							    <b:AnchorListItem ui:field="anchorListItemNextCDays">Next 7 days</b:AnchorListItem>
+							    <b:AnchorListItem ui:field="anchorListItemNextDDays">Next 30 days</b:AnchorListItem>
+	
+								<b:Button marginLeft="7" ui:field="buttonCollapseCustomizeDate" type="LINK" dataToggle="COLLAPSE"  
+								dataTarget="#collapseDates" text="From..."/>
+						    
+						  </b:DropDownMenu>
+							  
+					</b:ButtonGroup>
+				
+				</b:Column>			
+						
+			</b:Row>
+		
+		<b:Row ui:field="row4">	  			
+
+			  <b:Column ui:field="columnDates" size="XS_12,SM_12,MD_3,LG_3" offset="XS_0,SM_0,MD_3,LG_3">
+			  
+					<b:Collapse  ui:field="collapseDates" b:id="collapseDates" toggle="false" marginTop="10">
+															
+							<b:InputGroup>
+							
+								<b:InputGroupAddon icon="CALENDAR">From</b:InputGroupAddon>
+	
+								<b3:DatePicker ui:field="dateTimePickerFrom" placeholder="Date" autoClose="true"
+				                           	format="d M yy" highlightToday="true" showTodayButton="true" width="100%"/>
+				                           	
+				       		</b:InputGroup>
+			        				        				
+					</b:Collapse>
+					
+			</b:Column>	
+				
+		</b:Row>
+		
+
+		<b:Row ui:field="row5">
+		
+			<b:Column ui:field="columnWaiting" size="XS_12,SM_12,MD_3,LG_3" offset="XS_0,SM_0,MD_3,LG_3">
+				
+				<b:Icon ui:field="iconWaitingForEvents" type="SPINNER" size="TIMES2" spin="true" color="#337ab7"/>
+
+			</b:Column>
+			
+	    </b:Row>					
+		
+		<b:Row ui:field="row6">
+		
+			<b:Column ui:field="columnAboutResults1" size="XS_12,SM_12,MD_6,LG_6" offset="XS_0,SM_0,MD_3,LG_3" marginTop="10">
+			
+					<b.html:Paragraph ui:field="paragraphResults" emphasis="MUTED"/>	
+								
+			</b:Column>
+			
+		</b:Row>
+			
+		<b:Row ui:field="row7">
+			
+			<b:Column ui:field="columnAboutResults2" size="XS_12,SM_12,MD_6,LG_6" offset="XS_0,SM_0,MD_3,LG_3" marginTop="0" marginBottom="15">
+			
+					<b:Anchor ui:field="anchorResults"></b:Anchor>	
+								
+			</b:Column>
+		
+		</b:Row>
+		
+		
+		
+		
+		
+		
+		
+	    
+	    
+	    
+		
+		
+		
+		
+		
+		<b:Row marginBottom="70" marginTop="5">
+
+			  <b:Column ui:field="columnResults" size="XS_12,SM_12,MD_6,LG_6" offset="XS_0,SM_0,MD_3,LG_3">
+			  
+			  <b.gwt:CellTable ui:field="cellTable" bordered="false" condensed="false" striped="false" hover="false"/>
+				
+					<b.html:Div ui:field="divPagination" styleName="{style.centralize__}" visible="false">
+						<b:Pagination ui:field="pagination" marginBottom="1"/>
+						<b.html:Br/>
+						<b.html:Text ui:field="textPagination"/>
+						<b.html:Br/>
+					</b.html:Div>
+	              
+	        </b:Column>
+	        
+    </b:Row> 
+    
+  </b:Container>
+
+</g:ScrollPanel>
+  
+</ui:UiBinder> 
+
+
+
+
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module rename-to='Ctn'>
+
+	<replace-with class="com.ctnf.client.FactoryImpl" >
+		<when-type-is class="com.ctnf.client.Factory"/>
+	</replace-with>
+     
+	<inherits name='com.google.gwt.user.User'/>
+	<inherits name='com.google.gwt.activity.Activity'/>
+	<inherits name='com.google.gwt.place.Place'/>
+	<inherits name="com.google.gwt.logging.Logging"/>
+	<inherits name="com.google.gwt.resources.Resources"/>
+	<inherits name="com.google.gwt.precompress.Precompress"/>
+	
+	<inherits name="org.gwtbootstrap3.extras.notify.NotifyNoResources"/>
+	
+	<!-- <inherits name="org.gwtbootstrap3.extras.select.Select"/> -->
+	<inherits name="org.gwtbootstrap3.extras.select.SelectNoResources" />
+	
+	<!-- <inherits name="org.gwtbootstrap3.extras.datepicker.DatePicker"/> -->
+	<inherits name="org.gwtbootstrap3.extras.datepicker.DatePickerNoResources" />
+	
+	<!--# To change the default logLevel  -->
+	<set-property name="gwt.logging.logLevel" value="FINEST"/>
+	<!--# To enable logging    -->
+	<set-property name="gwt.logging.enabled" value="TRUE"/>     
+
+<!-- 	<inherits name="org.gwtbootstrap3.GwtBootstrap3"/> -->
+	<inherits name="org.gwtbootstrap3.GwtBootstrap3CDN"/>
+	
+	
+		<public path='public'>
+			        <include name='*'/>
+<!-- 	        <include name='*.css'/> -->
+<!-- 	        <include name='*.js'/> -->
+<!-- 	        <include name='*.map'/> -->
+<!--     	 <include name="fonts/*"/>    	 -->
+
+	    </public>
+<!-- 	    <stylesheet src='theme.css'/> -->
+    
+  
+	    
+	<inherits name="com.ctnc"/>
+	
+  	<entry-point class='com.ctnf.client.Ctn'/>
+    
+  	<source path='client'/>  	
+  	<source path='shared'/>  	
+  	<source path="com.ctnc.shared"/>
+  	
+  	<!-- Fallback User Agent for use by CRAWLERS -->
+    <set-property-fallback name="user.agent" value="gecko1_8" />
+      	
+</module>
+

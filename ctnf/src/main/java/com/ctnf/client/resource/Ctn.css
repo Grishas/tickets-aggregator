@@ -1,0 +1,263 @@
+.dropdown-menu .item {
+	  padding: 5px !important;
+}
+
+.dropdown-menu .item-selected {
+  background-color: #eee;
+  cursor: pointer; 
+}
+
+
+/* .well{background-image: url(squairy_light.png);} */
+
+.star{
+	background: fuchsia;
+}
+
+.well{background: white;}
+
+
+.menu{
+    background-color: #337ab7;  
+}
+.menu a:link,
+.menu a:hover,
+.menu a:visited{
+    color:white !important;
+}
+.menu a:active{
+    color:#337ab7 !important;
+}
+
+.dropDownMenuFilterPrice a:link{
+    color:#337ab7 !important;
+}
+.dropDownMenuFilterQty a:link{
+    color:#337ab7 !important;
+}
+.multipleSelectSections a > span{
+    color:#337ab7 !important;
+}
+
+
+
+
+
+.jumbotron {
+/*     margin-bottom: 0px; */
+/*     background-image: url(background.1.jpg); */
+/*     background-position: 0% 25%; */
+/*     background-size: cover; */
+/*     background-repeat: no-repeat; */
+/*     color: white; */
+/*     text-shadow: black 0.3em 0.3em 0.3em; */
+
+
+/* font-size: 72px; */
+/*   background: -webkit-linear-gradient(#eee, #333); org */
+/*   -webkit-background-clip: text; */
+/*   -webkit-text-fill-color: transparent; */
+
+}
+
+/* body */
+/* { */
+/* 	background-color: #eee !important; */
+/* } */
+
+body
+{
+/* 	background-color: #eee !important; */
+/* 	background-color: #ffffff!important; */
+
+/* background-image: url(squairy_light.png);  */
+
+
+
+
+
+
+/* background-position: top left right; */
+/* background-repeat: repeat-x; */
+
+/* background-size: 800px 300px; */
+/* color: white; */
+
+}
+
+.verticalLine {
+    border-left: thick solid #ff0000;
+}
+
+/* background-image: url(bg10.jpg); */
+/*  	background-position: 0% 25%; */
+/*     background-size: cover; */
+/*     background-repeat: no-repeat; */
+/*     color: white; */
+
+/* bg8 */
+/*     background-color: #eee !important; */
+/*       background-color: #333 !important; */
+
+
+
+/* .tuMapTooltip{ */
+
+/* !background: white; */
+/* !background: -webkit-linear-gradient(top, white 0%, #E6E6E6 100%); */
+/* !background: -moz-linear-gradient(top, white 0%, #E6E6E6); */
+
+
+
+/* box-shadow: 0 1px 1px #DEDEDE; */
+/* padding: 5px; */
+/* border: 1px solid #666666; */
+/* display: none; */
+/* border-radius: 5px {cornerRadius}; */
+/* box-shadow: 1px 1px 3px rgba(0,0,0,0.5); */
+/* font-size:14px; */
+/* background-image: url(squairy_light.png); */
+
+
+/*  position: fixed; */
+ 
+/* } */
+ 
+ 
+.search {
+	background-image: url(softball.jpg);
+    background-repeat: repeat-x;
+}
+
+.searchAdjust {
+	background-image: url(softball.jpg);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position: right; 
+}
+    
+.tuMapContainer .ZoomControls
+{
+    position:absolute;
+    top:5px;
+    left:5px;
+}
+.tuMapContainer .ZoomControls div
+{
+    width:22px;
+    height:19px;
+    margin-bottom:5px;
+    display:block;
+    font-size:14px;
+    background-color:#FFFFFF;
+    border:0;
+    background-image:url(../IMG/Zoom.png);
+    background-repeat:no-repeat;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    cursor:pointer;
+}
+.tuMapContainer .ZoomControls .ZoomIn
+{
+    background-position:-26px -3px;
+}
+.tuMapContainer .ZoomControls .ZoomOut
+{
+   background-position:-1px -3px
+}
+    
+/*********************************************************************
+    Tooltip
+*********************************************************************/
+.tuMapTooltip
+{
+    background: #FCF1BD;
+    padding: 5px;
+    border: 1px solid #666666;
+    display: none;
+    -moz-border-radius: 5px /*{cornerRadius}*/;
+    -webkit-border-radius: 5px /*{cornerRadius}*/;
+    border-radius: 5px /*{cornerRadius}*/;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    font-size:12px;
+}
+.tuMapTooltip .SectionViewZoom
+{
+    background-image:url(../IMG/SectionViewZoom.png);
+    background-position: center center;
+    background-repeat:no-repeat;
+    position:absolute;
+    width:83px;
+    height:16px;
+    margin:-23px 0 0 1px;
+}
+.tuMapTooltip img
+{
+    margin:2px auto;
+    text-align:center;
+    border: 1px solid #666666;
+}
+.tuMapTooltip .SectionColor
+{
+	display:inline-block;
+	width:15px;
+	height:15px;
+	margin-right:5px;
+	margin-bottom:-3px;
+	border:1px solid #999999;
+}
+.tuMapTooltip .Title
+{
+    font-weight:bold;
+    display:inline;
+	font-size:13px;
+    line-height:15px;
+	padding-bottom:5px;
+    color:#0074E0;
+}
+.tuMapTooltip .RowDetails
+{
+    font-weight:bold;
+	font-size:10px;
+    line-height:12px;
+	padding-bottom:5px;
+    color:#850000;
+    padding-left:5px;
+    white-space:nowrap;
+}
+.tuMapTooltip .tuMapHighlight
+{
+    font-weight:bold;
+    color:#D93800;
+}
+.tuMapSectionViewContainer
+{
+	border:1px solid;
+	background-color:#487FC2;
+	color:#FFFFFF;
+	text-shadow:1px 1px 1px #333333;
+	font-size:14px;
+}
+.tuMapSectionViewContainer .CloseButton
+{
+	float:right;
+	background: url("../IMG/close.png") no-repeat;
+	width:16px;
+	height:16px;
+	cursor:pointer;
+	margin:3px;
+}
+
+.tuMapTooltip .SectionViewClose
+{
+    background-image:url(../IMG/close.png);
+    background-position: center center;
+    background-repeat:no-repeat;
+    float:right;
+    width:16px;
+    height:16px;
+    margin:-2px -2px 0 0;
+    cursor:pointer;
+}
+
+    
+

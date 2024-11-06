@@ -1,0 +1,22 @@
+#ctntn.target.end.point=http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2/tnwebservice.asmx
+ctntn.target.end.point=http://tnwebservices-test.ticketnetwork.com/tnwebservice/v3.2/tnwebservice.asmx
+ctntn.website.config.id=YtTgxnFwIRZlRbUFTZghfQ==
+ctntn.charset=UTF-8
+ctntn.get.events.action=http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2/GetEvents
+ctntn.get.countries.action=http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2/GetCountries
+ctntn.get.states.action=http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2/GetStates
+ctntn.get.event.performers.action=http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2/GetEventPerformers
+ctntn.get.venue.action=http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2/GetVenue
+ctntn.get.categories.master.list.action=http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2/GetCategoriesMasterList
+ctntn.event.display.date.without.time.string.detection=TBA
+ctntn.event.display.date.time.format=MM/dd/yyyy h:mm a
+ctntn.event.display.date.format=MM/dd/yyyy
+ctntn.event.date.format=yyyy-MM-dd'T'HH:mm:ss
+ctntn.get.tickets.action=http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2/GetTickets
+ctntn.get.categories.master.list.request=<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v3="http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2"><soap:Header/><soap:Body><v3:GetCategoriesMasterList><v3:websiteConfigID>#websiteConfigID#</v3:websiteConfigID></v3:GetCategoriesMasterList></soap:Body></soap:Envelope>
+ctntn.get.countries.request=<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v3="http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2"><soap:Header/><soap:Body><v3:GetCountries><v3:websiteConfigID>#websiteConfigID#</v3:websiteConfigID></v3:GetCountries></soap:Body></soap:Envelope>
+ctntn.get.event.performers.request=<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v3="http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2"><soap:Header/><soap:Body><v3:GetEventPerformers><v3:websiteConfigID>#websiteConfigID#</v3:websiteConfigID></v3:GetEventPerformers></soap:Body></soap:Envelope>
+ctntn.get.events.request=<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v3="http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2"><soap:Header/><soap:Body><v3:GetEvents><v3:websiteConfigID>#websiteConfigID#</v3:websiteConfigID><v3:stateID>#stateID#</v3:stateID></v3:GetEvents></soap:Body></soap:Envelope>
+ctntn.get.states.by.country.id.request=<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v3="http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2"><soap:Header/><soap:Body><v3:GetStates><v3:websiteConfigID>#websiteConfigID#</v3:websiteConfigID><v3:countryID>#countryID#</v3:countryID></v3:GetStates></soap:Body></soap:Envelope>
+ctntn.get.tickets.request=<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v3="http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2"><soap:Header/><soap:Body><v3:GetTickets><v3:websiteConfigID>#websiteConfigID#</v3:websiteConfigID><v3:eventID>#eventID#</v3:eventID></v3:GetTickets></soap:Body></soap:Envelope>
+ctntn.get.venue.request=<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v3="http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2"><soap:Header/><soap:Body><v3:GetVenue><v3:websiteConfigID>#websiteConfigID#</v3:websiteConfigID></v3:GetVenue></soap:Body></soap:Envelope>

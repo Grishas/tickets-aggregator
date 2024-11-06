@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>ctnp</artifactId>
+    <groupId>ctn</groupId>
+    <version>1</version>
+  </parent>
+  
+  <artifactId>ctnf</artifactId>
+  <packaging>war</packaging>
+  <name>ctnf</name>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.google.gwt</groupId>
+        <artifactId>gwt</artifactId>
+        <version>${gwtVersion}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  
+  <dependencies>
+	 	<dependency>
+	        <groupId>ctn</groupId>
+	        <artifactId>ctnb</artifactId>
+	        <version>${ctnb.version}</version>
+	    </dependency>
+	
+		<dependency>
+			<groupId>ctn</groupId>
+			<artifactId>ctnc</artifactId>
+			<version>${ctnc.version}</version>
+			<type>java-source</type>
+		</dependency>
+			
+		<dependency>
+	        <groupId>ctn</groupId>
+	        <artifactId>ctnc</artifactId>
+	        <version>${ctnc.version}</version>
+	    </dependency> 
+	
+  </dependencies>
+  
+  <build>
+  
+<!--   <resources> -->
+<!--         <resource> -->
+<!--             <directory>com/ctnc/client</directory> -->
+<!--         </resource> -->
+<!--     </resources> -->
+  
+    <!-- Output classes directly into the webapp, so that IDEs and "mvn process-classes" update them in DevMode -->
+    <outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/classes</outputDirectory>
+
+    <plugins>
+
+      <!-- GWT Maven Plugin -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>gwt-maven-plugin</artifactId>
+        <version>2.7.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+              <goal>test</goal>
+              <goal>generateAsync</goal>
+            </goals>
+          </execution>
+        </executions>
+        <!-- Plugin configuration. There are many available options, see 
+          gwt-maven-plugin documentation at codehaus.org -->
+        <configuration>
+          <runTarget>Ctn.html</runTarget>
+          <modules>
+            <module>com.ctnf.Ctn</module>
+          </modules>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

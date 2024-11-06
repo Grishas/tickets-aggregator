@@ -1,0 +1,60 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"	
+	xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+    xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html">
+    
+	<ui:style>
+       .centralize {
+			text-align:center;
+			display: block;
+    		margin-left: auto;
+    		margin-right: auto
+		}
+		
+	</ui:style>
+		   
+		<b:Container fluid="true">
+
+	<b:Row>
+
+		<b:Column size="XS_12,SM_12,MD_12,LG_12" offset="XS_0,SM_0,MD_0,LG_0"
+			paddingLeft="0" paddingRight="0" marginLeft="0" marginRight="0">
+
+			<b.html:Div ui:field="divMenu" />
+
+		</b:Column>
+
+	</b:Row>
+		
+		
+			<b:Row>
+		        <b:Column size="XS_12,SM_12,MD_10,LG_10" offset="XS_0,SM_0,MD_1,LG_1" marginTop="10">
+		          		                    	
+	               		<b.html:Paragraph emphasis="MUTED">
+	               	    
+	               	    <b:Heading size="H1">
+						  <b:Icon type="INFO_CIRCLE"/> 
+						  <b.html:Text text="About"/>
+						</b:Heading>
+	               		
+	               		<b.html:Br/>
+	               		
+						Compare Tickets Now is a free, easy, quick and safe way to find the best seats at best prices to a large variety of events.
+	               	    <b.html:Br/>
+						Our search engine aggregates information from many official ticket sites in order to provide the best offer for our site visitors.
+						<b.html:Br/>
+						Search by team, artist, event name or region.
+						<b.html:Br/>
+						Thanks you for visiting our site.
+						<b.html:Br/>
+						<b.html:Br/>
+						
+<!-- 						<b:Image ui:field="imageLogoCompareTicketsNow"  -->
+<!-- 						responsive="true"/> -->
+				
+				 		</b.html:Paragraph>	 
+				 										 		           		
+	            </b:Column>
+			</b:Row>	
+		</b:Container>
+</ui:UiBinder> 

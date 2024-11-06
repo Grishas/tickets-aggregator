@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  
+<!--  <context-param> -->
+<!--  	<param-name>contextConfigLocation</param-name> -->
+<!--     <param-value>/WEB-INF/context/rootApplicationContext.xml</param-value> -->
+<!--     <description>Root of Spring context application</description> -->
+<!--  </context-param> -->
+ 
+ <!-- Configure ContextLoaderListener to use AnnotationConfigWebApplicationContext
+      instead of the default XmlWebApplicationContext -->
+<!--   <context-param> -->
+<!--       <param-name>contextClass</param-name> -->
+<!--       <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>       -->
+<!--   </context-param> -->
+ 
+ <!-- Configuration locations must consist of one or more comma- or space-delimited
+       fully-qualified @Configuration classes. Fully-qualified packages may also be
+       specified for component-scanning -->
+<!--   <context-param> -->
+<!--       <param-name>contextConfigLocation</param-name> -->
+<!--       <param-value>com.ctnb.BackendConfiguration</param-value>     -->
+<!--   </context-param> -->
+ 
+ <filter> 
+  	<filter-name>Crawler</filter-name> 
+    <filter-class>com.ctnf.server.Crawler</filter-class> 
+   </filter> 
+
+
+ <filter> 
+  	<filter-name>GZIPFilter</filter-name> 
+    <filter-class>com.ctnf.server.GZIPFilter</filter-class> 
+   </filter> 
+
+
+ <filter> 
+  	<filter-name>CacheControl</filter-name> 
+    <filter-class>com.ctnf.server.CacheControl</filter-class> 
+   </filter> 
+
+  <filter-mapping> 
+    <filter-name>Crawler</filter-name> 
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping> 
+    <filter-name>CacheControl</filter-name> 
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping> 
+    <filter-name>GZIPFilter</filter-name> 
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+
+<!--    <listener> -->
+<!-- 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>			  -->
+<!--    </listener> -->
+     
+   <listener>
+		<listener-class>com.ctnf.server.ApplicationListener</listener-class>
+   </listener>
+      
+  <servlet>
+    <servlet-name>suggestionServlet</servlet-name>
+    <servlet-class>com.ctnf.server.SuggestionServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>searchServlet</servlet-name>
+    <servlet-class>com.ctnf.server.SearchServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>compareServlet</servlet-name>
+    <servlet-class>com.ctnf.server.CompareServiceImpl</servlet-class>
+  </servlet>
+ 
+  <servlet>
+    <servlet-name>checkoutServlet</servlet-name>
+    <servlet-class>com.ctnf.server.CheckoutServiceImpl</servlet-class>
+  </servlet>
+ 
+  <servlet>
+    <servlet-name>maintenanceServlet</servlet-name>
+    <servlet-class>com.ctnf.server.MaintenanceServiceImpl</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>maintenanceServlet</servlet-name>
+    <url-pattern>/Ctn/maintenance</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>suggestionServlet</servlet-name>
+    <url-pattern>/Ctn/suggestion</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>searchServlet</servlet-name>
+    <url-pattern>/Ctn/search</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>compareServlet</servlet-name>
+    <url-pattern>/Ctn/compare</url-pattern>
+  </servlet-mapping>
+
+   <servlet-mapping>
+    <servlet-name>checkoutServlet</servlet-name>
+    <url-pattern>/Ctn/checkout</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Ctn.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

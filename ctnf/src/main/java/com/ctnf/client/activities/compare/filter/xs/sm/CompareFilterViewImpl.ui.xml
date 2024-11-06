@@ -1,0 +1,46 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+	xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html" xmlns:b.gwt="urn:import:org.gwtbootstrap3.client.ui.gwt"
+	xmlns:select="urn:import:org.gwtbootstrap3.extras.select.client.ui"
+	xmlns:b3="urn:import:org.gwtbootstrap3.extras.slider.client.ui"
+	xmlns:b4="urn:import:org.gwtbootstrap3.extras.toggleswitch.client.ui">
+
+	<ui:style>
+	
+	</ui:style>
+
+	<b:Container fluid="true" marginBottom="0">
+
+		<b:Row marginTop="0">
+
+			<b:Column size="XS_12,SM_12,MD_0,LG_0" offset="XS_0,SM_0,MD_0,LG_0">
+
+				<b:ButtonGroup>
+
+					<b:ButtonGroup>
+						<b:Button ui:field="buttonFilterPrice" dataToggle="DROPDOWN"
+							type="PRIMARY" marginRight="2" size="DEFAULT">Any Price</b:Button>
+						<b:DropDownMenu ui:field="dropDownMenuFilterPrice" />
+					</b:ButtonGroup>
+
+					<b:ButtonGroup>
+						<b:Button ui:field="buttonFilterQty" dataToggle="DROPDOWN"
+							type="PRIMARY" marginRight="2" size="DEFAULT">Any Qty</b:Button>
+						<b:DropDownMenu ui:field="dropDownMenuFilterQty" />
+					</b:ButtonGroup>
+
+					<b:Button ui:field="buttonFilterStar" marginRight="2" size="DEFAULT" icon="STAR" title="Show starred"/>
+
+					<b:Button ui:field="buttonFilterReset" icon="UNDO" visible="true" title="Reset Filters" size="DEFAULT" />
+
+				</b:ButtonGroup>
+
+			</b:Column>
+
+		</b:Row>
+
+	</b:Container>
+
+
+</ui:UiBinder>

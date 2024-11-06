@@ -1,0 +1,3 @@
+ctns.geocoding.api.key=xix9yWMnNh0Bu0Oa8ac5gP3MST96AxS7VTga/+rsCOQ1RVjonSXQdOK+rErBgmXe
+#city or venue when you have full address
+ctns.geocoding.data.level=city

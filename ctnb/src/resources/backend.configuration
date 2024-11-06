@@ -1,0 +1,18 @@
+ctnb.get.tickets.timeout=25000
+ctnb.get.tickets.retry.threshold=2
+
+#set 5 min in prd = 1000 ms * 60 * 5   ---> 300000
+ctnb.keep.tickets.in.cache.ms=300000
+
+ctnb.enable.moke.ip=true
+ctnb.moke.ip.source.list=127.0.0.1
+#la 68.168.28.181, ny 72.229.28.185 , out of city 4.184.68.0 , ca 192.206.151.131 , my home ip 62.0.114.221
+ctnb.moke.ip.target=72.229.28.185
+
+#x@y,f@c....
+ctnb.maintenance.to.emails=compareticketsnow@gmail.com
+#safe
+ctnb.gmail.password=
+ctnb.send.emails.enable=true
+
+#cache

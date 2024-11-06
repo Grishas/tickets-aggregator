@@ -1,0 +1,8 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v3="http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2">
+   <soap:Header/>
+   <soap:Body>
+      <v3:GetCategoriesMasterList>
+         <v3:websiteConfigID>#websiteConfigID#</v3:websiteConfigID>
+      </v3:GetCategoriesMasterList>
+   </soap:Body>
+</soap:Envelope>

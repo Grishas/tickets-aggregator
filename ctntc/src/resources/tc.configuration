@@ -1,0 +1,13 @@
+ctntc.charset=UTF-8
+ctntc.target.end.point=http://www.ticketcity.com/ws/XMlTicketAPIv3/XMlTicketAPIv3.asmx
+ctntc.api.key=fW7bKcBbbTnRLWgSb69Y2Tc5wKd4YXyiM327Hymzb2DuEvmtvxET637Ygrnur2yS
+ctntc.get.countries.action=http://www.ticketcity.com/XMLTicketAPIv3/GetCountries
+ctntc.get.events.by.country.id.action=http://www.TicketCity.com/XMLTicketAPIv3/GetEventsByCountryID
+ctntc.event.date.format=MM/dd/yyyy
+ctntc.event.date.without.time.string.detection=TBA
+ctntc.event.date.time.format=MM/dd/yyyy hh:mma
+ctntc.get.ticket.blocks.action=http://www.ticketcity.com/XMLTicketAPIv3/GetTicketBlocks
+#
+ctntc.get.countries.request=<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xt="http://www.TicketCity.com/XMLTicketAPIv3/"><soap:Header/><soap:Body><xt:GetCountries><xt:APIKey>#APIKey#</xt:APIKey></xt:GetCountries></soap:Body></soap:Envelope>
+ctntc.get.events.by.country.id.request=<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xt="http://www.TicketCity.com/XMLTicketAPIv3/"><soap:Header/><soap:Body><xt:GetEventsByCountryID><xt:APIKey>#APIKey#</xt:APIKey><xt:CountryID>#CountryID#</xt:CountryID></xt:GetEventsByCountryID></soap:Body></soap:Envelope>
+ctntc.get.ticket.blocks.request=<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xt="http://www.TicketCity.com/XMLTicketAPIv3/"><soap:Header/><soap:Body><xt:GetTicketBlocks><xt:APIKey>#APIKey#</xt:APIKey><xt:EventID>#EventID#</xt:EventID></xt:GetTicketBlocks></soap:Body></soap:Envelope>
