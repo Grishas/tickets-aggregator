@@ -1,6 +1,6 @@
 #ctntn.target.end.point=http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2/tnwebservice.asmx
 ctntn.target.end.point=http://tnwebservices-test.ticketnetwork.com/tnwebservice/v3.2/tnwebservice.asmx
-ctntn.website.config.id=YtTgxnFwIRZlRbUFTZghfQ==
+ctntn.website.config.id=
 ctntn.charset=UTF-8
 ctntn.get.events.action=http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2/GetEvents
 ctntn.get.countries.action=http://tnwebservices.ticketnetwork.com/tnwebservice/v3.2/GetCountries
