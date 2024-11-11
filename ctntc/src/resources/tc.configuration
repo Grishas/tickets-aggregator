@@ -1,6 +1,6 @@
 ctntc.charset=UTF-8
 ctntc.target.end.point=http://www.ticketcity.com/ws/XMlTicketAPIv3/XMlTicketAPIv3.asmx
-ctntc.api.key=fW7bKcBbbTnRLWgSb69Y2Tc5wKd4YXyiM327Hymzb2DuEvmtvxET637Ygrnur2yS
+ctntc.api.key=
 ctntc.get.countries.action=http://www.ticketcity.com/XMLTicketAPIv3/GetCountries
 ctntc.get.events.by.country.id.action=http://www.TicketCity.com/XMLTicketAPIv3/GetEventsByCountryID
 ctntc.event.date.format=MM/dd/yyyy
